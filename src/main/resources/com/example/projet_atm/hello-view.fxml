@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="719.0" style="-fx-background-color: #838282; -fx-border-style: none;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_atm.HelloController">
+   <children>
+      <ImageView fitHeight="632.0" fitWidth="664.0" layoutX="54.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\Brunel\IdeaProjects\Projet_ATM\Images\pngegg(14).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="OkDroite_1" layoutX="586.0" layoutY="291.0" minHeight="16.0" minWidth="39.0" mnemonicParsing="false" onAction="#OkDroite_1_click" prefHeight="34.0" prefWidth="39.0" style="-fx-background-color: #089bcd; -fx-background-radius: 10pc; -fx-border-style: dotted; -fx-border-color: white; -fx-border-radius: 10pc;" textFill="WHITE" />
+      <Button layoutX="198.0" layoutY="584.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="353.0" style="-fx-background-color: #000000;" text="💸CASH💲" textFill="WHITE" />
+      <Button fx:id="OkDroite_0" layoutX="586.0" layoutY="349.0" minHeight="16.0" minWidth="39.0" mnemonicParsing="false" onAction="#OkDroite_0_click" prefHeight="34.0" prefWidth="39.0" style="-fx-background-color: #089bcd; -fx-background-radius: 10pc; -fx-border-style: dotted; -fx-border-radius: 50pc; -fx-border-color: white;" textFill="WHITE">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font></Button>
+      <Label layoutX="297.0" layoutY="42.0" text="BIENVENUE ♻">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <ImageView accessibleRole="LIST_VIEW" fitHeight="34.0" fitWidth="56.0" layoutX="462.0" layoutY="482.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\Brunel\IdeaProjects\Projet_ATM\Images\pngegg(9).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="BtnAdmin" layoutX="572.0" layoutY="588.0" mnemonicParsing="false" onAction="#BtnAdmin_click" prefHeight="34.0" prefWidth="119.0" style="-fx-background-color: #233f8d; -fx-background-radius: 10pc;" text="Administrateur 〽" textAlignment="RIGHT" textFill="WHITE" />
+      <Button fx:id="BtnQuitter" layoutX="47.0" layoutY="588.0" mnemonicParsing="false" onAction="#BtnQuitter_click" prefHeight="30.0" prefWidth="119.0" style="-fx-background-color: red; -fx-background-radius: 10pc;" text="Quitter 🗑" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font></Button>
+      <Label fx:id="TitleLab" layoutX="231.0" layoutY="206.0" text="Vueillez entrer votre NOM" textFill="WHITE">
+         <font>
+            <Font name="Monospaced Regular" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="BtnValider" layoutX="372.0" layoutY="510.0" mnemonicParsing="false" onAction="#BtnValider_click" style="-fx-background-color: #089bcd; -fx-background-radius: 10px 0px 10px 0px;" text="Valider" />
+      <Button fx:id="BtnAnnuler" layoutX="211.0" layoutY="510.0" mnemonicParsing="false" onAction="#BtnAnnuler_click" style="-fx-background-color: #9e1616; -fx-background-radius: 0px 10px 0px 10px;" text="Retour" textFill="WHITE" />
+      <Label fx:id="francais" layoutX="389.0" layoutY="298.0" textFill="WHITE">
+         <font>
+            <Font name="Roboto" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="Anglais" layoutX="386.0" layoutY="357.0" textFill="WHITE">
+         <font>
+            <Font name="Roboto" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="OKGauche0" layoutX="107.0" layoutY="349.0" minHeight="16.0" minWidth="39.0" mnemonicParsing="false" onAction="#OKGauche0_click" prefHeight="34.0" prefWidth="39.0" style="-fx-background-color: #089bcd; -fx-background-radius: 10pc; -fx-border-style: dotted; -fx-border-color: white; -fx-border-radius: 10pc;" textFill="WHITE" />
+      <Button fx:id="OKGauche1" layoutX="107.0" layoutY="291.0" minHeight="16.0" minWidth="39.0" mnemonicParsing="false" onAction="#OKGauche1_click" prefHeight="34.0" prefWidth="39.0" style="-fx-background-color: #089bcd; -fx-background-radius: 10pc; -fx-border-style: dotted; -fx-border-color: white; -fx-border-radius: 10pc;" textFill="WHITE" />
+      <Label fx:id="labGauche1" layoutX="273.0" layoutY="259.0" prefHeight="19.0" prefWidth="198.0" textFill="RED" />
+      <Label fx:id="labGauche0" layoutX="262.0" layoutY="357.0" prefHeight="18.0" prefWidth="91.0" textFill="WHITE" />
+      <ImageView fx:id="FlagMada" fitHeight="26.0" fitWidth="27.0" layoutX="222.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\Brunel\IdeaProjects\Projet_ATM\Images\pngegg(19).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="FlagFrench" fitHeight="26.0" fitWidth="27.0" layoutX="477.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\Brunel\IdeaProjects\Projet_ATM\Images\pngegg(16).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="FlagUSA" fitHeight="26.0" fitWidth="27.0" layoutX="477.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\Brunel\IdeaProjects\Projet_ATM\Images\pngegg(17).png" />
+         </image>
+      </ImageView>
+      <Label fx:id="LabGauche2" layoutX="246.0" layoutY="299.0" text="." textFill="WHITE" />
+      <Button layoutX="232.0" layoutY="464.0" minHeight="16.0" minWidth="33.0" mnemonicParsing="false" onAction="#Un_click" prefHeight="22.0" prefWidth="50.0" style="-fx-background-color: transparent;" text="1" textFill="#162568" />
+      <Button layoutX="297.0" layoutY="466.0" minHeight="16.0" minWidth="33.0" mnemonicParsing="false" onAction="#Deux_click" prefHeight="22.0" prefWidth="50.0" style="-fx-background-color: transparent;" text="2" textFill="#162568" />
+      <Button layoutX="234.0" layoutY="449.0" minHeight="16.0" minWidth="33.0" mnemonicParsing="false" onAction="#Quatre_click" prefHeight="22.0" prefWidth="50.0" style="-fx-background-color: transparent;" text="4" textFill="#162568" />
+      <Button layoutX="362.0" layoutY="464.0" minHeight="16.0" minWidth="33.0" mnemonicParsing="false" onAction="#Trois_click" prefHeight="22.0" prefWidth="50.0" style="-fx-background-color: transparent;" text="3" textFill="#162568" />
+      <Button layoutX="298.0" layoutY="449.0" minHeight="16.0" minWidth="33.0" mnemonicParsing="false" onAction="#Cinq_click" prefHeight="22.0" prefWidth="50.0" style="-fx-background-color: transparent;" text="5" textFill="#162568" />
+      <Button layoutX="362.0" layoutY="448.0" minHeight="16.0" minWidth="33.0" mnemonicParsing="false" onAction="#Six_click" prefHeight="22.0" prefWidth="50.0" style="-fx-background-color: transparent;" text="6" textFill="#162568" />
+      <Button layoutX="236.0" layoutY="432.0" minHeight="16.0" minWidth="33.0" mnemonicParsing="false" onAction="#Sept_click" prefHeight="22.0" prefWidth="50.0" style="-fx-background-color: transparent;" text="7" textFill="#162568" />
+      <Button layoutX="299.0" layoutY="432.0" minHeight="16.0" minWidth="33.0" mnemonicParsing="false" onAction="#Huite_click" prefHeight="22.0" prefWidth="50.0" style="-fx-background-color: transparent;" text="8" textFill="#162568" />
+      <Button layoutX="362.0" layoutY="432.0" minHeight="16.0" minWidth="33.0" mnemonicParsing="false" onAction="#Neuf_click" prefHeight="22.0" prefWidth="50.0" style="-fx-background-color: transparent;" text="9" textFill="#162568" />
+      <Button layoutX="296.0" layoutY="486.0" minHeight="16.0" minWidth="33.0" mnemonicParsing="false" onAction="#Zero_click" prefHeight="22.0" prefWidth="50.0" style="-fx-background-color: transparent;" text="0" textFill="#162568" />
+      <Label fx:id="BienvenueClient" layoutX="296.0" layoutY="76.0" textFill="#062f63">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NomText" layoutX="245.0" layoutY="234.0" prefHeight="26.0" prefWidth="235.0" promptText="NOM" />
+      <Button fx:id="OKGauche3" layoutX="107.0" layoutY="230.0" minHeight="16.0" minWidth="39.0" mnemonicParsing="false" onAction="#OKGauche3_click" prefHeight="34.0" prefWidth="39.0" style="-fx-background-color: #089bcd; -fx-background-radius: 10pc; -fx-border-style: dotted; -fx-border-color: white; -fx-border-radius: 10pc;" textFill="WHITE" />
+      <Button fx:id="OkDroite_3" layoutX="586.0" layoutY="230.0" minHeight="16.0" minWidth="39.0" mnemonicParsing="false" onAction="#OkDroite_3_click" prefHeight="34.0" prefWidth="39.0" style="-fx-background-color: #089bcd; -fx-background-radius: 10pc; -fx-border-style: dotted; -fx-border-color: white; -fx-border-radius: 10pc;" textFill="#eec48f" />
+      <Label fx:id="LabGauche3" layoutX="246.0" layoutY="238.0" text="." textFill="WHITE" />
+      <ImageView fitHeight="114.0" fitWidth="128.0" layoutX="308.0" layoutY="270.0" opacity="0.45" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\Brunel\IdeaProjects\Projet_ATM\Images\pngegg(12).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="448.0" layoutY="422.0" prefHeight="19.0" prefWidth="72.0" text="Code PIN" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="99.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\Brunel\IdeaProjects\Projet_ATM\Images\pngegg(10).png" />
+         </image>
+      </ImageView>
+      <Button layoutX="361.0" layoutY="486.0" minHeight="16.0" minWidth="33.0" mnemonicParsing="false" onAction="#Delete_click" prefHeight="22.0" prefWidth="50.0" style="-fx-background-color: transparent;" text="Del" textFill="#162568" />
+      <Button layoutX="222.0" layoutY="486.0" minHeight="16.0" minWidth="33.0" mnemonicParsing="false" onAction="#CE_click" prefHeight="22.0" prefWidth="50.0" style="-fx-background-color: transparent;" text="CE" textFill="#162568" />
+      <ImageView fx:id="CarteRetire" fitHeight="56.0" fitWidth="78.0" layoutX="458.0" layoutY="449.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\Brunel\IdeaProjects\Projet_ATM\Images\pngegg(18).png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="TextFCode" layoutX="442.0" layoutY="446.0" onAction="#TextFCode_click" prefHeight="26.0" prefWidth="84.0" style="-fx-background-radius: 5px;" />
+   </children>
+</AnchorPane>

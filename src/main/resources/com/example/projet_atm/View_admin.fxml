@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="563.0" prefWidth="1239.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_atm.HelloAdmin">
+   <children>
+      <Pane layoutY="1.0" prefHeight="560.0" prefWidth="248.0" style="-fx-background-color: #128bc3;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="1.0">
+         <children>
+            <Label layoutX="72.0" layoutY="21.0" text="CLIENT 💳" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="523.0" text="Banque 💸" textFill="#900909">
+               <font>
+                  <Font name="Roboto Bold" size="28.0" />
+               </font>
+            </Label>
+            <TextField fx:id="CodePINText" layoutX="35.0" layoutY="216.0" onAction="#CodePINText_click" onInputMethodTextChanged="#CodePINText_changed" prefHeight="26.0" prefWidth="162.0" promptText="Code PIN" />
+            <TextField fx:id="PrenomText" layoutX="35.0" layoutY="285.0" prefHeight="26.0" prefWidth="162.0" promptText="Prénom" />
+            <TextField fx:id="CINText" layoutX="35.0" layoutY="323.0" onAction="#CINText_click" prefHeight="26.0" prefWidth="162.0" promptText="N° CIN" />
+            <TextField fx:id="MoneyInStockText" layoutX="31.0" layoutY="359.0" prefHeight="26.0" prefWidth="162.0" promptText="Argent dans le stock" />
+            <TextField fx:id="MoneyStockerText" layoutX="31.0" layoutY="396.0" prefHeight="26.0" prefWidth="162.0" promptText="Argent stocker" />
+            <TextField fx:id="NomText" layoutX="35.0" layoutY="250.0" onAction="#NomText_click" prefHeight="26.0" prefWidth="162.0" promptText="Nom" />
+            <ImageView fx:id="PhotoRecent" fitHeight="121.0" fitWidth="141.0" layoutX="49.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: Open_hand;">
+               <image>
+                  <Image url="C:\Users\Brunel\IdeaProjects\Projet_ATM\Images\pngegg(15).png" />
+               </image></ImageView>
+          <Button fx:id="Editer" layoutX="89.0" layoutY="483.0" mnemonicParsing="false" onAction="#Editer_click" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #322D72;" text="Editer" textFill="WHITE" />
+            <Button fx:id="supprime" layoutX="6.0" layoutY="483.0" mnemonicParsing="false" onAction="#supprime_click" prefHeight="30.0" prefWidth="78.0" style="-fx-background-color: #900909;" text="Supprimer" />
+            <Label layoutX="-21.0" layoutY="118.0" rotate="-90.0" text=" Photo de Profil" textFill="#900909">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="Enregistre" layoutX="158.0" layoutY="483.0" mnemonicParsing="false" onAction="#Enregistre_click" text="Enregistrer" />
+            <ComboBox fx:id="ComboTypeText" layoutX="31.0" layoutY="429.0" prefHeight="26.0" prefWidth="162.0" />
+            <Button fx:id="importButton" layoutX="181.0" layoutY="175.0" mnemonicParsing="false" onAction="#ImportButton_click" style="-fx-background-color: #1194ab;" text="Importer" textFill="WHITE" />
+            <TextField fx:id="URLPhotoText" layoutX="34.0" layoutY="181.0" prefHeight="26.0" prefWidth="130.0" />
+         </children>
+      </Pane>
+      <TableView fx:id="TableViewAdmin" layoutX="249.0" layoutY="99.0" onSort="#TableViewAdmin_click" prefHeight="415.0" prefWidth="990.0" style="-fx-background-color: #403d3d;" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="249.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="99.0">
+        <columns>
+          <TableColumn fx:id="CodePINTable" prefWidth="77.0" text="Code PIN" />
+          <TableColumn fx:id="NomTable" prefWidth="135.0" text="Nom" />
+            <TableColumn fx:id="PrenomTable" minWidth="0.0" prefWidth="140.0" text="Prénom" />
+            <TableColumn fx:id="NumCINTable" prefWidth="135.0" text="N° CIN" />
+            <TableColumn fx:id="MoneyInStockTable" prefWidth="149.0" text="Argent dans compte" />
+            <TableColumn fx:id="MoneyStockerTable" prefWidth="124.0" text="Argent stocker" />
+            <TableColumn fx:id="TypeCompteTable" prefWidth="127.0" text="Type de compte" />
+            <TableColumn fx:id="DateToSaveTable" prefWidth="102.0" text="Date d'enregistre" />
+        </columns>
+      </TableView>
+      <Label layoutX="588.0" layoutY="24.0" text=" ⚙Administrateur🌫" textFill="#900909" AnchorPane.leftAnchor="588.0">
+         <font>
+            <Font name="Roboto Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="550.0" layoutY="503.0" opacity="0.36" prefHeight="34.0" prefWidth="138.0" rotate="-20.6" text="Banque 💸" textFill="#16619a" AnchorPane.bottomAnchor="26.0">
+         <font>
+            <Font name="Roboto Bold" size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="211.0" layoutY="503.0" opacity="0.36" prefHeight="34.0" prefWidth="138.0" rotate="-22.6" text="Banque 💸" textFill="#16619a" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="211.0">
+         <font>
+            <Font name="Roboto Bold" size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="938.0" layoutY="503.0" opacity="0.36" prefHeight="34.0" prefWidth="138.0" rotate="-20.6" text="Banque 💸" textFill="#16619a" AnchorPane.bottomAnchor="26.0">
+         <font>
+            <Font name="Roboto Bold" size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Label>
+      <TextField fx:id="RechercheText" layoutX="958.0" layoutY="61.0" prefHeight="26.0" prefWidth="189.0" promptText="Rechercher" style="-fx-background-radius: 5px;" AnchorPane.rightAnchor="92.0" />
+      <Label layoutX="805.0" layoutY="528.0" text="Nombre des clients dans la liste :" textFill="#050535" AnchorPane.bottomAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="NumberLab" layoutX="1060.0" layoutY="528.0" text="Number" textFill="#050535" AnchorPane.bottomAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="ChercherBtn" layoutX="1155.0" layoutY="59.0" mnemonicParsing="false" onAction="#ChercherBtn_click" prefHeight="30.0" prefWidth="78.0" style="-fx-background-color: #050535;" text="Chercher" textFill="WHITE" AnchorPane.rightAnchor="6.0" />
+      <ImageView fitHeight="104.0" fitWidth="130.0" layoutX="389.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\Brunel\IdeaProjects\Projet_ATM\Images\pngegg(7).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="130.0" layoutX="1136.0" layoutY="485.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="8.0" AnchorPane.rightAnchor="1.7341766357421875">
+         <image>
+            <Image url="C:\Users\Brunel\IdeaProjects\Projet_ATM\Images\pngegg(11).png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="ComboDisponible" layoutX="259.0" layoutY="527.0" prefWidth="150.0" style="-fx-background-color: #050535;" />
+   </children>
+</AnchorPane>
